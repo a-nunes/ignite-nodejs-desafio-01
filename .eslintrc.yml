@@ -6,4 +6,6 @@ extends:
   - airbnb-base
 parserOptions:
   ecmaVersion: 12
-rules: {}
+rules: {
+  "no-shadow": ["error", { "builtinGlobals": false, "hoist": "never", "allow": [] }]
+}
